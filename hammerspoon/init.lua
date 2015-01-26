@@ -1,0 +1,97 @@
+require 'events'
+
+-- Automatically Reload Config
+function reloadConfig(files) hs.reload() end
+hs.pathwatcher.new(os.getenv('HOME') .. '/.hammerspoon/', reloadConfig):start()
+
+local function bindHotkeys(mod, bindings, fn)
+  for hotkey, arg in pairs(bindings) do
+    hs.hotkey.bind(mod, hotkey, function() fn(arg) end)
+  end
+end
+
+-- Bash Commands and Coroutines
+do
+  -- Example command
+  local mod      = { "alt", "ctrl" }
+  local bindings = {
+    [ "a" ] = "sleep 4; say 'complete'"
+  }
+
+  bindHotkeys(mod, bindings, function(cmd)
+    local task = coroutine.create(function()
+      os.execute(cmd)
+    end)
+    coroutine.resume(task)
+  end)
+end
+
+-- Applications
+do
+  local mod      = { "cmd", "ctrl" }
+  local bindings = {
+    [ "q" ] = "Messages",
+    [ "w" ] = "Hipchat",
+    [ "e" ] = "Android Studio",
+    [ "a" ] = "iTerm",
+    [ "s" ] = "Google Chrome",
+    [ "z" ] = "Spotify",
+    [ "c" ] = "player" -- genymotion emulator
+  }
+
+  bindHotkeys(mod, bindings, function(app)
+    hs.application.launchOrFocus(app)
+  end)
+end
+
+-- Sizing
+do
+  local Size     = require 'size'
+  local mod      = { "cmd", "ctrl" }
+  local bindings = {
+    [ "h" ] = "left",
+    [ "l" ] = "right",
+    [ "j" ] = "bottom",
+    [ "k" ] = "top",
+    [ "u" ] = "upperLeft",
+    [ "i" ] = "upperRight",
+    [ "n" ] = "bottomLeft",
+    [ "," ] = "bottomRight",
+    [ "m" ] = "full"
+  }
+
+  bindHotkeys(mod, bindings, function(location)
+    Size[location]()
+  end)
+end
+
+-- Caffine
+do
+  local Caffeine = require 'caffeine'
+  local mod      = { "cmd", "shift" }
+  local bindings = { 
+    [ "d" ] = "displayStatus",
+    [ "c" ] = "toggle",
+    [ "v" ] = "sleep"
+  }
+
+  bindHotkeys(mod, bindings, function(method)
+    Caffeine[method]()
+  end)
+end
+
+-- Spotify
+do
+  local Spotify  = require 'spotify'
+  local mod      = { "cmd", "shift" }
+  local bindings = {
+    [ "a" ] = "previous track",
+    [ "s" ] = "next track",
+    [ "z" ] = "playpause",
+    [ "x" ] = "get the player position"
+  }
+
+  bindHotkeys(mod, bindings, function(cmd)
+    Spotify.command(cmd)
+  end)
+end
