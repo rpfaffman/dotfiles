@@ -30,7 +30,7 @@ end
 do
   local mod      = { "cmd", "ctrl" }
   local bindings = {
-    [ "q" ] = "Messages",
+    [ "q" ] = "Sequel Pro",
     [ "w" ] = "Hipchat",
     [ "e" ] = "Android Studio",
     [ "a" ] = "iTerm",
