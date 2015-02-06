@@ -12,21 +12,46 @@ local locations = {
   full        = { x=0,   y=0,   w=1,   h=1   }
 }
 
-local function setLocation(coords)
+local directions = {
+  left  = { x=-0.1, y=0    },
+  right = { x=0.1,  y=0    },
+  up    = { x=0,    y=-0.1  },
+  down  = { x=0,    y=0.1 }
+}
+
+local function retrieveState()
   local win = hs.window.focusedWindow()
   if win == nil then return end
   local winFrame = win:frame()
   local screen = win:screen()
   local screenFrame = screen:frame()
+  return win, winFrame, screenFrame
+end
 
-  winFrame.x = coords.x * screenFrame.w
-  winFrame.y = coords.y * screenFrame.h
+local function setLocation(coords)
+  local win, winFrame, screenFrame = retrieveState()
+  if not (win and winFrame and screenFrame) then return end
+
+  winFrame.x = (coords.x * screenFrame.w) + screenFrame.x
+  winFrame.y = (coords.y * screenFrame.h) + screenFrame.y
   winFrame.w = coords.w * screenFrame.w
   winFrame.h = coords.h * screenFrame.h
 
   win:setFrame(winFrame)
 end
 
+-- Moving Windows to Relative Locations
+function Size.moveLocation(direction)
+  local win, winFrame, screenFrame = retrieveState()
+  if not (win and winFrame and screenFrame) then return end
+
+  winFrame.x = winFrame.x + (screenFrame.w * directions[direction].x)
+  winFrame.y = winFrame.y + (screenFrame.h * directions[direction].y)
+
+  win:setFrame(winFrame)
+end
+
+-- Moving/Sizing Windows to Fixed Locations
 for name, coords in pairs(locations) do
   Size[name] = function()
     setLocation(coords)

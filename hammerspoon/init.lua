@@ -44,7 +44,10 @@ do
   end)
 end
 
--- Sizing
+-- Window Animation Duration
+hs.window.animationDuration = 0.075
+
+-- Window Movement and Sizing (Fixed)
 do
   local Size     = require 'size'
   local mod      = { "cmd", "ctrl" }
@@ -62,6 +65,22 @@ do
 
   bindHotkeys(mod, bindings, function(location)
     Size[location]()
+  end)
+end
+
+-- Window Movement (Relative)
+do
+  local Size     = require 'size'
+  local mod      = { "cmd", "ctrl", "shift" }
+  local bindings = {
+    [ "h" ] = "left",
+    [ "l" ] = "right",
+    [ "j" ] = "down",
+    [ "k" ] = "up"
+  }
+
+  bindHotkeys(mod, bindings, function(direction)
+    Size.moveLocation(direction)
   end)
 end
 
