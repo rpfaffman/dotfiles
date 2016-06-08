@@ -27,16 +27,20 @@ do
 end
 
 -- Applications
+-- To disable the MacOSX's dictionary hotkey (cmd-ctrl-d),
+-- make sure to run in terminal:
+-- defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 70 '<dict><key>enabled</key><false/></dict>'
 do
   local mod      = { "cmd", "ctrl" }
   local bindings = {
-    [ "q" ] = "Sequel Pro",
-    [ "w" ] = "Hipchat",
-    [ "e" ] = "Android Studio",
+    [ "q" ] = "Mail",
+    [ "w" ] = "Calendar",
+    [ "e" ] = "Slack",
     [ "a" ] = "iTerm",
     [ "s" ] = "Google Chrome",
-    [ "z" ] = "Spotify",
-    [ "c" ] = "player" -- genymotion emulator
+    [ "d" ] = "Zeplin",
+    [ "x" ] = "Spotify",
+    [ "c" ] = "Messages"
   }
 
   bindHotkeys(mod, bindings, function(app)
