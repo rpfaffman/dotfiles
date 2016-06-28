@@ -39,6 +39,7 @@ do
     [ "a" ] = "iTerm",
     [ "s" ] = "Google Chrome",
     [ "d" ] = "Zeplin",
+    [ "z" ] = "Stickies",
     [ "x" ] = "Spotify",
     [ "c" ] = "Messages"
   }
