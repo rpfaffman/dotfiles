@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
+ help
+ package-list-packages
+ describe-key
  where-is
- cider-jack-in
- list-buffers
- ido-wide-find-file
- join-line
- paredit-mode
- balance-windows
+ global-set-key
+ windmove-default-keybindings
+ windmove-left
 )
 
 ;; ----- smex-data -----
 (
  (save-buffer . 1)
- (package-list-packages . 2)
+ (package-list-packages . 4)
  (package-install . 2)
  (package-show-package-list . 1)
  (cider-mode . 1)
@@ -23,7 +23,7 @@
  (rename-file . 4)
  (paredit-forward-slurp-sexp . 61)
  (goto-line . 1)
- (where-is . 11)
+ (where-is . 14)
  (yank . 1)
  (delete-whitespace-rectangle . 2)
  (delete-trailing-whitespace . 1)
@@ -39,12 +39,12 @@
  (describe-function . 4)
  (scroll-up . 1)
  (replace-regexp . 1)
- (describe-key . 2)
+ (describe-key . 12)
  (shrink-window . 1)
  (maximize-window . 1)
  (minimize-window . 1)
  (balance-windows . 6)
- (windmove-up . 1)
+ (windmove-up . 3)
  (windmove-right . 1)
  (calendar . 1)
  (magit-log . 3)
@@ -71,4 +71,9 @@
  (ido-mode . 2)
  (ido-wide-find-file . 1)
  (list-buffers . 1)
+ (window-configuration-to-register . 1)
+ (windmove-left . 1)
+ (windmove-default-keybindings . 1)
+ (global-set-key . 1)
+ (help . 1)
 )

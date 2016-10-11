@@ -135,3 +135,13 @@
 ;; Keybindings
 ; example: (global-set-key (kbd "M-a") 'backward-char) ; Alt+a
 (global-set-key (kbd "C-c C-f") 'neotree-toggle)
+(define-key neotree-mode-map (kbd "i") #'neotree-enter-horizontal-split)
+(define-key neotree-mode-map (kbd "s") #'neotree-enter-vertical-split)
+
+; change kill to (C-w C-w) and bind vim-like window navigation
+(global-unset-key (kbd "C-w"))
+(global-set-key (kbd "C-w C-w") 'kill-region)
+(global-set-key (kbd "C-w C-h") 'windmove-left)
+(global-set-key (kbd "C-w C-j") 'windmove-down)
+(global-set-key (kbd "C-w C-k") 'windmove-up)
+(global-set-key (kbd "C-w C-l") 'windmove-right)

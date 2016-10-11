@@ -97,7 +97,6 @@
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-;; Neotree
 (require 'neotree)
 
 ;;;;
@@ -134,7 +133,14 @@
 (load "setup-js.el")
 
 ;; Keybindings
-; (global-set-key (kbd "M-a") 'backward-char) ; Alt+a
-
+; example: (global-set-key (kbd "M-a") 'backward-char) ; Alt+a
 (global-set-key (kbd "C-c C-f") 'neotree-toggle)
+(define-key neotree-mode-map (kbd "i") #'neotree-enter-horizontal-split)
+(define-key neotree-mode-map (kbd "s") #'neotree-enter-vertical-split)
 
+(global-unset-key (kbd "C-w"))
+(global-set-key (kbd "C-w C-w") 'kill-region)
+(global-set-key (kbd "C-w C-h") 'windmove-left)
+(global-set-key (kbd "C-w C-j") 'windmove-down)
+(global-set-key (kbd "C-w C-k") 'windmove-up)
+(global-set-key (kbd "C-w C-l") 'windmove-right)
