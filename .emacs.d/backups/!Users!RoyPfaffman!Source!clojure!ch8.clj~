@@ -1,0 +1,57 @@
+; use macroexpand to figure out what a macro is doing
+(defmacro infix
+  [exp]
+  (list (second exp) (first exp) (last exp)))
+(macroexpand '(infix (1 + 1)))
+
+; a bad way to write a macro, using too many "list" functions
+(defmacro code-critic
+  "Phrases are courtesy Hermes Conrad from Futurama"
+  [bad good]
+  (list 'do
+        (list 'println
+              "Great squid of Madrid, this is bad code:"
+              (list 'quote bad))
+        (list 'println
+              "Sweet gorilla of Manila, this is good code:"
+              (list 'quote good))))
+
+(defmacro code-critic
+  "Phrases are courtesy Hermes Conrad from Futurama"
+  [bad good]
+  `(do (println "Great squid of Madrid, this is bad code:"
+                (quote ~bad))
+       (println "Sweet gorilla of Manila, this is good code:"
+                (quote ~good))))
+
+; you can refactor the code above even more by consolidating the println functions
+
+(defn criticize-code
+  [criticism code]
+  `(println ~criticism (quote ~code)))
+
+(defmacro code-critic
+  [bad good]
+  `(do ~(criticize-code "Cursed bacteria of Liberia, this is bad code:" bad)
+       ~(criticize-code "Sweet sacred boa of Western and Eastern Samoa, this is good code:" good)))
+
+; this one should break
+(defmacro code-critic
+  [bad good]
+  `(do ~(map #(apply criticize-code %)
+             [["Great squid of Madrid, this is bad code:" bad]
+              ["Sweet gorilla of Manila, this is good code:" good]])))
+
+
+; we use unquote splicing to solve this problem (~@). This is an example of what it can do:
+`(+ ~@(list 1 2 3)) ; will return
+(list + 1 2 3)
+
+; using unquote splicing, we're able to fix the above code-critic macro:
+(defmacro code-critic
+  [bad good]
+  `(do ~@(map #(apply criticize-code %)
+            [["great squif od Madrid, this is bad code:" bad]
+             ["Sweet gorilla of Manila, this is good code:" good]])))
+
+(code-critic (1 + 1) (+ 1 1))

@@ -1,0 +1,3 @@
+; loops are created in clojure by doing:
+
+(loop [iteration 0])

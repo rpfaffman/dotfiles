@@ -1,0 +1,14 @@
+to start the brew demon:
+brew services start postgresql
+
+to start demon:
+pg_ctl -D pg -l logfile start
+
+to create server:
+initdb pg
+
+to start server:
+pg_ctl -D pg -l logfile start
+
+to create database:
+createdb shouter

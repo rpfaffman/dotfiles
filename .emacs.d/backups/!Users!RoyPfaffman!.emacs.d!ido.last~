@@ -1,0 +1,110 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/RoyPfaffman/Source/clojure/the-divine-cheese-code/src/" . "the_divine_cheese_code/")
+ ("/Users/RoyPfaffman/Source/clojure/the-divine-cheese-code/" . "src/")
+ ("/Users/RoyPfaffman/Source/fwpd/src/" . "fwpd/")
+ ("/Users/RoyPfaffman/.emacs.d/" . "customizations/")
+ ("/Users/RoyPfaffman/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/RoyPfaffman/Source/clojure/shouter/"
+ "/Users/RoyPfaffman/Source/clojure/shouter/src/shouter/models/"
+ "/Users/RoyPfaffman/Source/clojure/shouter/src/shouter/views/"
+ "/Users/RoyPfaffman/Source/clojure/shouter/src/shouter/controllers/"
+ "/Users/RoyPfaffman/Source/clojure/shouter/src/shouter/"
+ "/Users/RoyPfaffman/Source/AppleTV/"
+ "/Users/RoyPfaffman/Source/AppleTV/src/coffee/"
+ "/Users/RoyPfaffman/.emacs.d/"
+ "/Users/RoyPfaffman/source/clojure/the-divine-cheese-code/src/the_divine_cheese_code/visualization/"
+ "/Users/RoyPfaffman/Source/clojure/the-divine-cheese-code/src/the_divine_cheese_code/"
+ "/Users/RoyPfaffman/Source/clojure-noob/src/clojure_noob/"
+ "/Users/RoyPfaffman/Source/fwpd/"
+ "/Users/RoyPfaffman/Source/fwpd/src/fwpd/"
+ "/Users/RoyPfaffman/"
+ "/Users/RoyPfaffman/Source/AppleTV/coffee/"
+ "/Users/RoyPfaffman/.emacs.d/customizations/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "Procfile"
+ "shout.clj"
+ "migration.clj"
+ "shouts.clj"
+ "layout.clj"
+ "notes"
+ "package.json"
+ "webpack.config.js"
+ "info.plist"
+ "app.entry.coffee"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/RoyPfaffman/.emacs.d/" (22524 23385 0 0) "vendor/" "themes/" "README.md" "projectile-bookmarks.eld" "places" "init.el~" "init.el" "ido.last" "elpa/" "customizations/" "cider-history" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".gitignore" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure/shouter/" (22524 15620 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pg_notes" "pg/" "logfile" "LICENSE" "doc/" "CHANGELOG.md" ".nrepl-port" ".lein-repl-history" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure/shouter/src/shouter/models/" (22524 15546 0 0) "migration.clj" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure/shouter/src/shouter/" (22524 15183 0 0) "web.clj" "views/" "core.clj" "controllers/" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure/shouter/src/shouter/views/" (22524 15381 0 0) "shouts.clj" "layout.clj" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure/" (22517 15366 0 0) "the-divine-cheese-code/" "test.clj" "notes" "ch8.clj" "ch7.clj" "ch6.clj" "ch5.clj" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/AppleTV/" (22500 26481 0 0) "webpack.config.js" "Vevo/" "tests/" "src/" "server/" "README.md" "package.json" "notes" "node_modules/" "misc/" "makefile" "lang/" "keepalive.html" "js/" "images/" "gulpfile.js" "BUILD/" "bower_components/" "bag.plist" "AKAMAI_DSA_SLA/" ".gitignore" ".git/" ".env.json" ".DS_Store" ".config.backup.js" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/AppleTV/js/" (22496 15447 0 0) "searchPage.js" "page.js" "app.js" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/AppleTV/src/js/" (22498 54464 0 0) "vodPlaylistPageLoader.js" "vodGenrePageLoader.js" "vodContinuousPageLoader.js" "vmstreamsense.js" "vmrequire.js" "vmfreewheel.js" "vmdom.js" "vmcs.js" "vmapi.js" "videoHelpers.js" "vevoPlaylistPageLoader.js" "vevoPageLoader.js" "vevoPage.js" "utils.js" "testPageLoader.js" "testPage.js" "templates.js" "showPageLoader.js" "showPage.js" "settingsPageLoader.js" "settingsPage.js" "searchPageLoader.js" "searchPage.js" "searchPage.entry.js" "search.entry.js" "raven.js" "playlistEditPageLoader.js" "playlistEditPage.js" "playerHelper.js" "page.entry.js" "page-terms-loader.js" "page-privacy-loader.js" "page-legal-loader.js" "myPlaylistsPageLoader.js" "myPlaylistsPage.js" "lib/" "homenavpage.js" "helpers.js" "general.js" "endo.js" "detailPageLoader.js" "detailPage.js" "authPageLoader.js" "authPage.js" "artistPageLoader.js" "artistPage.js" "app.entry.js" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/AppleTV/src/coffee/" (22500 22146 0 0) "vodPlaylistPageLoader.coffee" "vodGenrePageLoader.coffee" "vodContinuousPageLoader.coffee" "vmstreamsense.coffee" "vmrequire.coffee" "vmfreewheel.coffee" "vmdom.coffee" "vmcs.coffee" "vmapi.coffee" "videoHelpers.coffee" "vevoPlaylistPageLoader.coffee" "vevoPageLoader.coffee" "vevoPage.coffee" "utils.coffee" "testPageLoader.coffee" "testPage.coffee" "templates.coffee" "showPageLoader.coffee" "showPage.coffee" "settingsPageLoader.coffee" "settingsPage.coffee" "searchPageLoader.coffee" "searchPage.entry.coffee" "raven.coffee" "playlistEditPageLoader.coffee" "playlistEditPage.coffee" "playerHelper.coffee" "page.entry.coffee" "page-terms-loader.coffee" "page-privacy-loader.coffee" "page-legal-loader.coffee" "myPlaylistsPageLoader.coffee" "myPlaylistsPage.coffee" "homenavpage.coffee" "helpers.coffee" "general.coffee" "detailPageLoader.coffee" "detailPage.coffee" "authPageLoader.coffee" "authPage.coffee" "artistPageLoader.coffee" "artistPage.coffee" "app.entry.coffee" ".DS_Store" "../" "./")
+
+ ("/Users/RoyPfaffman/" (22500 17013 0 0) "standup/" "Source/" "scripts/" "Public/" "Pictures/" "personal/" "notes" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Box Sync/" "benefits" "Applications/" ".zshrc" ".zshenv" ".zprofile" ".zpreztorc" ".zprezto/" ".zlogout" ".zlogin" ".zhistory" ".zcompdump.zwc" ".zcompdump" ".zcompcache/" ".Xauthority" ".vimrc" ".viminfo" ".vim/" ".v8flags.4.6.85.31.RoyPfaffman.json" ".v8flags.4.5.103.35.RoyPfaffman.json" ".v8flags.4.5.103.35.root.json" ".v8flags.3.14.5.9.RoyPfaffman.json" ".Trash/" ".tmux.conf" ".subversion/" ".ssh/" ".rnd" ".rbenv/" ".psql_history" ".pry_history" ".pairs" ".nvm/" ".npmrc" ".npm/" ".node_repl_history" ".node-gyp/" ".netrc" ".NERDTreeBookmarks" ".mitmproxy/" ".m2/" ".local/" ".lesshst" ".lein/" ".jspm/" ".hyperterm_plugins/" ".hyperterm.js" ".heroku/" ".hammerspoon/" ".gitconfig" ".gem/" ".fzf.zsh" ".fzf.bash" ".fzf/" ".eslintrc" ".env" ".emacs~" ".emacs.d/" ".electron/" ".DS_Store" ".config/" ".coffee_history" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_profile" ".bash_history" ".babel.json" "#test#" "#.zshrc#" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/" (22498 62515 0 0) "webpack-test/" "web/" "VMApiPod/" "valgrind-3.11.0.tar.bz2" "valgrind-3.11.0/" "TV_clone/" "tv-watch-design-sprint/" "tv-party-design-sprint/" "TV/" "tig/" "stubbed/" "react-redux-skeleton/" "portal-react/" "Portal/" "pegthing/" "npm-debug.log" "notes" "ledger_lunacy_pfaffman.zip" "ledger_lunacy_pfaffman/" "interview-questions/" "fwpd/" "electron-sample-apps/" "electron-quick-start/" "dotfiles/" "cms2/" "clojure-noob/" "clojure/" "brain_bucket/" "AppleTV/" "APIv2-Client/" "api/" ".DS_Store" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/AppleTV/src/" (22495 27487 0 0) "js/" "coffee/" ".DS_Store" "../" "./")
+
+ ("/Users/RoyPfaffman/source/clojure/the-divine-cheese-code/src/the_divine_cheese_code/visualization/" (22480 32538 0 0) "svg.clj" "../" "./")
+
+ ("/Users/RoyPfaffman/source/clojure/the-divine-cheese-code/src/the_divine_cheese_code/" (22498 6773 0 0) "visualization/" "core.clj" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure/the-divine-cheese-code/src/the_divine_cheese_code/" (22480 32463 0 0) "core.clj" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure/the-divine-cheese-code/" (22480 32457 0 0) "visualization/" "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" "CHANGELOG.md" ".nrepl-port" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure/the-divine-cheese-code/visualization/" (22480 32199 0 0) "svg.clj" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure/the-divine-cheese-code/src/" (22472 34889 0 0) "the_divine_cheese_code/" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure-noob/src/clojure_noob/" (22461 60369 0 0) "regex.clj" "reduce.clj" "notes.clj" "loops.clj" "hobbit2.clj" "hobbit.clj" "core.clj" "chapter2problems.clj" "ch4.clj" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/fwpd/src/" (22461 64726 0 0) "fwpd/" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/fwpd/" (22462 21589 0 0) "test/" "target/" "suspects.csv" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" "CHANGELOG.md" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/fwpd/src/fwpd/" (22462 21524 0 0) "core.clj" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure-noob/" (22459 38972 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "notes" "LICENSE" "doc/" "CHANGELOG.md" ".nrepl-port" ".lein-repl-history" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/clojure-noob/src/" (22454 4584 0 0) "clojure_noob/" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/AppleTV/coffee/" (22454 17504 0 0) "vodPlaylistPageLoader.coffee" "vodGenrePageLoader.coffee" "vodContinuousPageLoader.coffee" "vmstreamsense.coffee" "vmrequire.coffee" "vmfreewheel.coffee" "vmdom.coffee" "vmcs.coffee" "vmapi.coffee" "videoHelpers.coffee" "vevoPlaylistPageLoader.coffee" "vevoPageLoader.coffee" "vevoPage.coffee" "utils.coffee" "thor.coffee" "testPageLoader.coffee" "testPage.coffee" "templates.coffee" "showPageLoader.coffee" "showPage.coffee" "settingsPageLoader.coffee" "settingsPage.coffee" "searchPageLoader.coffee" "searchPage.coffee" "playlistEditPageLoader.coffee" "playlistEditPage.coffee" "playerHelper.coffee" "myPlaylistsPageLoader.coffee" "myPlaylistsPage.coffee" "homenavpage.coffee" "general.coffee" "detailPageLoader.coffee" "detailPage.coffee" "config/" "authPageLoader.coffee" "authPage.coffee" "artistPageLoader.coffee" "artistPage.coffee" "app.coffee" "../" "./")
+
+ ("/Users/RoyPfaffman/Source/AppleTV/Vevo/" (22433 8680 0 0) "Vevo.xcodeproj/" "Vevo/" ".DS_Store" "../" "./")
+
+ ("/Users/RoyPfaffman/.emacs.d/customizations/" (22454 9719 0 0) "ui.el" "shell-integration.el" "setup-js.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
+
+ ("/Users/" (22289 35379 0 0) "Shared/" "RoyPfaffman/" "iTeam/" ".localized" "../" "./")
+
+ ("/Users/RoyPfaffman/.lein/" (22454 8881 0 0) "self-installs/" "profiles.clj" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,9 @@
+;; -*- coding: utf-8-unix -*-
+;; Automatically written history of CIDER REPL session
+;; Edit at your own risk
+
+("(test2 1 2 3)" "(apply identity [1 2 3])" "(apply identity '(1 2 3))" "(test2 1 2 3)" "(defn test2
+                     [& args]
+                     args)" "(test1 1 2)" "(test1 1)" "(test1 1 2 3)" "(defn test1
+                     [& args]
+                     (apply identity args))" "(#(+ &%) 2 3)" "(#(+ %&) 2 3)" "(pop test-list)" "test-list" "(def test-list '(\"test\" \"something\"))" "(def test-list (\"test\" \"something\"))" "(pop (something3 \"test\" \"this\"))" "(something3 \"test\" \"this\")" "(defn something3 [& fns] fns)" "(pop (something2 \"this\" \"test\"))" "(something2 \"this\" \"test\")" "(defn something2 [& fns] (println fns))" "(something \"test\" \"this\")" "(something [\"okay\" \"here\"])" "(defn something [& args] (clojure.string/join \",\" args))" "(defn test [& args] (clojure.string/join \",\" args))" "(last [1 2 3])" "(pop [1 2 3])")

@@ -1,0 +1,36 @@
+; Functional Programming
+; Pure Functions
+; 1) A certain input will always give a certain output (x -> y never changes). That is, given the same input, it will give the same output (no state is stored to change the output). This is called referential transparency.
+; 2) The function does not have any side-effects. That is, it does not change the world around it.
+
+; Referntial Transparency
+; If a function relies of an immutable value, it is referentially transparent. Methods on objects that rely on changing state are therefore not referentially transparent.
+
+; Living with Immutable Data Structures
+; It may seem that mutability is required in order for a program to run. Simple FOR and WHILE loops depend on mutability (to increment i, change data in objects, etc).
+; Use RECURSION instead of FOR/WHILE. It is the functional way to take a collection and return a new one instead of mutating the existing one.
+
+(defn sum
+  ([vals] (sum vals 0))
+  ([vals accumulating-total]
+   (if (empty? vals)
+     accumulating-total
+     (sum (rest vals) (+ (first vals) accumulating-total)))))
+(sum [1 2 3])
+
+; Notice that this function does not alter the values originally passed into the function. No mutation needed. In general, you can get performance boosts by using recur. Sum>Recur is the only change here:
+
+(defn recur-sum
+  ([vals] (sum vals 0))
+  ([vals accumulating-total]
+   (if (empty? vals)
+     accumulating-total
+     (recur (rest vals) (+ (first vals) accumulating-total)))))
+(recur-sum [1 2 3])
+
+(require `[clojure.string :as s])
+(defn clean
+  [text]
+  (s/replace (s/trim text) #"lol" "LOL"))
+
+(clean "My boa constrictor is so sassy lol!   ")

@@ -1,0 +1,4 @@
+; exercises for chapter 2 of brave clojure
+
+; use the str, vector, list, hash-map, and hash-set functions
+
