@@ -1,5 +1,3 @@
-require 'events'
-
 -- Automatically Reload Config
 function reloadConfig(files) hs.reload() end
 hs.pathwatcher.new(os.getenv('HOME') .. '/.hammerspoon/', reloadConfig):start()
@@ -35,13 +33,17 @@ do
   local bindings = {
     [ "q" ] = "Mail",
     [ "w" ] = "Calendar",
-    [ "e" ] = "Slack",
+    [ "e" ] = "Finder",
+    [ "r" ] = "Simulator",
     [ "a" ] = "iTerm",
     [ "s" ] = "Google Chrome",
     [ "d" ] = "Zeplin",
+    [ "f" ] = "Sublime Text",
+    [ "g" ] = "Xcode",
     [ "z" ] = "Stickies",
     [ "x" ] = "Spotify",
-    [ "c" ] = "Messages"
+    [ "c" ] = "Messages",
+    [ "v" ] = "Safari"
   }
 
   bindHotkeys(mod, bindings, function(app)
@@ -86,21 +88,6 @@ do
 
   bindHotkeys(mod, bindings, function(direction)
     Size.moveLocation(direction)
-  end)
-end
-
--- Caffine
-do
-  local Caffeine = require 'caffeine'
-  local mod      = { "cmd", "shift" }
-  local bindings = { 
-    [ "d" ] = "displayStatus",
-    [ "c" ] = "toggle",
-    [ "v" ] = "sleep"
-  }
-
-  bindHotkeys(mod, bindings, function(method)
-    Caffeine[method]()
   end)
 end
 
