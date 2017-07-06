@@ -1,1 +1,0 @@
-("~/Source/clojure/shouter/" "~/.emacs.d/" "~/Source/AppleTV/" "/usr/local/" "~/Source/TV/" "~/source/clojure/the-divine-cheese-code/" "~/Source/clojure/the-divine-cheese-code/" "~/source/clojure-noob/" "~/Source/pegthing/" "~/source/pegthing/" "~/Source/clojure-noob/" "~/Source/fwpd/")
