@@ -8,10 +8,9 @@ WHITELISTED_ENTRIES = [
 ]
 
 def run
-  entries = Dir.entries(".")
-  entries.each do |entry|
-    unless (entry.delete(".").empty? || !WHITELISTED_ENTRIES.include?(entry))
-      `rm -rf #{entry}; cp -rf ~/#{entry} .`
+  Dir.entries(".").each do |entry|
+    if WHITELISTED_ENTRIES.include?(entry)
+      `rm -rf #{entry}; cp -r ~/#{entry} .`
     end
   end
 end

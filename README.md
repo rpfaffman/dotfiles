@@ -46,6 +46,14 @@ Modifier: `CMD-CTRL`
  - `c` - Messages
  - `v` - Safari
 
+#### Spotify
+Modifier: `CMD-SHIFT`
+
+ - `a` - Previous song
+ - `s` - Next song
+ - `z` - Play/pause
+ - `x` - Current song
+
 ### TMUX
 Prefix: `ESC`
 
@@ -53,12 +61,12 @@ Starred commands (preceded with `*`) can be issued repeatedly, without hitting t
 
 #### General
  - `?` - Tmux help
- - `]` - Paste copied selection from visual mode
 
 ####  Panes
  - `"` - Split horizontally
  - `v` - Split vertically
  - `x` - Kill
+ - `z` - Toggle fullscreen
  - `h` - Move to left
  - `j` - Move to bottom
  - `k` - Move to top
@@ -82,9 +90,15 @@ Starred commands (preceded with `*`) can be issued repeatedly, without hitting t
 
 #### Visual Mode
  - `[` - Enter visual mode
+ - `]` - Paste copied selection from visual mode
+ - `=` - Open list of copied strings
  - `U` - Scroll upward
  - `D` - Scroll downward
  - `?` - Search upward
  - `/` - Search downward
+ - `b` - Move to beginning of word
+ - `f` - Move to end of word
+ - `0` - Move to beginning of line
+ - `$` - Move to end of line
  - `SPACE` - Begin selection
  - `ENTER` - Copy selection

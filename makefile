@@ -1,2 +1,2 @@
-update_repo:
+update:
 	./scripts/update.rb
